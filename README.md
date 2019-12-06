@@ -96,7 +96,7 @@ Additionally, we will be using a process called Test Driven Development, commonl
     - Fix the syntax error and confirm that tests are all green.
 
 1. Now, go to `code.js` and replace the function statement for `helloWorld` with a function experession. Do all the tests stay green or not? Why or why not? Double check your syntax. These are interchangeable because functions are *first class* citizens in the JS language.
-```js
+```js`
 // function statement syntax
 function helloWorld() {
     return "Hello, World!";
