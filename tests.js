@@ -39,4 +39,27 @@ describe('sayHello', function () {
     it("should never return 'undefined' when called", function() {
         expect(helloWorld()).not.toBe(undefined);
     });
+
+});
+
+describe('sayHello', function () {
+    it('should be defined function', function(){
+        expect(typeof sayHello).toBe('function');
+    });
+    it('should return a string when called', function(){
+        expect(typeof sayHello("Jane")).toBe("string");
+    });
+    it('should return the string "Say Hello Jane"! when executed', function() {
+        expect(sayHello("Jane")).toBe("Hello Jane!");
+    });
+    it("should never return 'undefined' when called", function() {
+        expect(helloWorld()).not.toBe(undefined);
+    });
+
+});
+
+describe('sayHello'("Pat"), function () {
+    it('should be defined function', function(){
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
+    });
 });
